@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Schedule from './components/Schedule';
-// import ListOfMeetings from './components/ListOfMeetings';
 import SidePanel from './components/SidePanel'
 import ListOfMeetings from './components/ListOfMeetings';
 import Landing from './components/Landing';
