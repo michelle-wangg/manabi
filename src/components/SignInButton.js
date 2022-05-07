@@ -2,7 +2,7 @@ import React from 'react';
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { auth } from './Firebase.js';
 
-const SignInButton = () => {
+const SignInButton = ({ color, text }) => {
 
     const googleSignIn = () => {
         const provider = new GoogleAuthProvider();
@@ -12,11 +12,11 @@ const SignInButton = () => {
                 console.log(user);
             })
             .catch(error => {
-                console.log("Error signing in.");
+                console.log("bruh");
             })
     }
 
-    return <button onClick={googleSignIn}>Google Sign In</button >
+    return <button style={{ backgroundColor : color }} onClick={googleSignIn}>{ text }</button >
 }
 
 export default SignInButton
