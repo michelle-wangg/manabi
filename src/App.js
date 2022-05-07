@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import "./App.css"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './components/Firebase';
+import SignOutButton from './components/SignOutButton';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <h1 className="Title">Manabi.</h1>
       <Schedule />
       <ListOfMeetings />
+      {/* <SignOutButton /> */}
     </div> : <Landing />
   )
 }
