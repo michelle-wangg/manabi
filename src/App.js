@@ -11,7 +11,8 @@ function App() {
       height: "100vh",
       minHeight: "100vh"
     }}>
-        <div >
+        <div>
+
       <h1 className="Title">Manabi.</h1>
       <Schedule/>
       <ListOfMeetings/>

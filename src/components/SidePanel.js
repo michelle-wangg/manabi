@@ -4,7 +4,7 @@ import './SidePanel.css'
 function SidePanel(props) {
     return (
         <div className='Frame'>
-            <h1 className='Title'>Upcoming Meetings</h1>
+            <h1 className='SideTitle'>Upcoming Meetings</h1>
         </div>
     )
 }
