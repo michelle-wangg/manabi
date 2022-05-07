@@ -3,5 +3,5 @@
 Education application.
 
 ## Technologies
-Frontend: React
+Frontend: React, HTML, CSS <br />
 Backend: Firebase
