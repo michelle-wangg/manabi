@@ -7,14 +7,15 @@ function Meeting(props){
   return (
     <div className='Component'>
       <div className='Box'>
-        <text className='Date'>{props.date}</text>
-        <text className='Time'>{props.time}</text>
-        <text className='Topic'>{props.topic}</text>
+        <p className='Date'>{props.date}</p>
+        <p className='Time'>{props.time}</p>
+        <p className='Topic'>{props.topic}</p>
       </div>
 
       <button className={cls}
               onClick={() => setCls((cls) => (cls === "NotJoined" ? "Joined" : "NotJoined"))}>
-        <text style={{color: "white"}}>+</text>
+        <p style={{color: "white",
+                  fontSize: 20}}>+</p>
       </button>
     </div>
   )

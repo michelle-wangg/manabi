@@ -16,7 +16,6 @@ function App() {
     }}>
       
       <div>
-
       <h1 className="Title">Manabi.</h1>
       <Schedule/>
       </div>
