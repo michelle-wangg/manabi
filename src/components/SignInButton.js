@@ -2,15 +2,12 @@ import React from 'react';
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { auth } from './Firebase.js';
 
-const SignIn = () => {
+const SignInButton = () => {
 
     const googleSignIn = () => {
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
             .then(result => {
-                const credential = GoogleAuthProvider.credentialFromResult(result);
-                const token = credential.accessToken;
-
                 const user = result.user;
                 console.log(user);
             })
@@ -22,4 +19,4 @@ const SignIn = () => {
     return <button onClick={googleSignIn}>Google Sign In</button >
 }
 
-export default SignIn
+export default SignInButton

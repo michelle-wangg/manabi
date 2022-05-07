@@ -1,15 +1,15 @@
 import React from 'react';
 import Schedule from './components/Schedule';
 import ListOfMeetings from './components/ListOfMeetings';
-import SignIn from './components/SignIn';
+import Landing from './components/Landing';
 import "./App.css"
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from './components/Firebase';
+// import { useAuthState } from 'react-firebase-hooks/auth';
+// import { auth } from './components/Firebase';
 
 function App() {
 
-  const [user] = useAuthState(auth);
-  
+  // const [user] = useAuthState(auth);
+
   return (
     <div style={{
       backgroundColor: "#27374F",
@@ -19,8 +19,7 @@ function App() {
       <h1 className="Title">Manabi.</h1>
       <Schedule/>
       <ListOfMeetings/>
-
-      <SignIn />
+      <Landing />
     </div>
     
   )
