@@ -12,7 +12,7 @@ const SignInButton = () => {
                 console.log(user);
             })
             .catch(error => {
-                console.log("bruh");
+                console.log("Error signing in.");
             })
     }
 
