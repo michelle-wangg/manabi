@@ -1,53 +1,15 @@
 import React from 'react';
 import Schedule from './components/Schedule';
 import ListOfMeetings from './components/ListOfMeetings';
+import SignIn from './components/SignIn';
 import "./App.css"
-
-// import firebase from 'firebase/app';
-// import 'firebase/firestore';
-// import 'firebase/auth';
-
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
-
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore/lite';
-import { getAuth } from 'firebase/auth';
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDLDFidgQ5lLTVCmyMNIVg9Fb2VF6WiNjA",
-  authDomain: "manabi-3117f.firebaseapp.com",
-  projectId: "manabi-3117f",
-  storageBucket: "manabi-3117f.appspot.com",
-  messagingSenderId: "355917125009",
-  appId: "1:355917125009:web:fa94c502c078571909f630",
-  measurementId: "G-36CJQTE0L8"
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const auth = getAuth(app);
-
-// const auth = firebase.auth();
-// const firestore = firebase.firestore();
-
-// document.addEventListener("DOMContentLoaded", event => {
-//   const app = firebase.app(); 
-//   console.log(app);
-// })
-
-// function googleLogin() {
-//   const provider = new firebase.auth.GoogleAuthProvider();
-
-//   firebase.auth().signInWithPopup(provider)
-
-//       .then(result => {
-//           const user = result.user;
-//           document.write('Hello ${user.displayName}');
-//       })
-// }
+import { auth } from './components/Firebase';
 
 function App() {
+
+  const [user] = useAuthState(auth);
+  
   return (
     <div style={{
       backgroundColor: "#27374F",
@@ -57,6 +19,8 @@ function App() {
       <h1 className="Title">Manabi.</h1>
       <Schedule/>
       <ListOfMeetings/>
+
+      <SignIn />
     </div>
     
   )
