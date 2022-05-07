@@ -25,27 +25,20 @@
     margin-left: 80px;
     margin-top: 10px;
     background-color: #eecb71;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     width: 500px;
-}
-
-.JoinButton {
-    margin-left: 0px;
-    margin-top: 10px;
+    display:flex; 
+    flex-direction:row;
+    align-items: baseline;
     height: 50px;
-    width: 50px;
-    background-color: #7BA6DA;
-    border: none;
-    /* onClick={() => console.log("You clicked on the pink circle!")} */
 }
 
 .Joined {
     background-color: #7BDA7E;
     margin-left: 10px;
     margin-top: 10px;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border: none;
 }
 
@@ -53,8 +46,8 @@
     background-color: #7BA6DA;
     margin-left: 10px;
     margin-top: 10px;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border: none;
 }
 
