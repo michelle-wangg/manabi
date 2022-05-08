@@ -3,7 +3,7 @@ import './Schedule.css';
 import Meeting from './Meeting';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { db } from './Firebase.js';
-import { collection } from 'firebase/firestore';
+import { collection, Timestamp } from 'firebase/firestore';
 
 function Schedule() {
 
@@ -13,8 +13,12 @@ function Schedule() {
   const [meetings] = useCollectionData(meetingsRef);
   console.log(meetings);
 
+  const timeStampDate = (date) => {
+    return date.toDate().toString().substring(0, 15);
+  }
+
   return (<div>
-    {meetings && meetings.map(meeting => <Meeting date={meeting.date.seconds} title={meeting.title} link={meeting.link} />)}
+    {meetings && meetings.map(meeting => <Meeting date={timeStampDate(meeting.date)} title={meeting.title} link={meeting.link} />)}
   </div>);
 }
 
