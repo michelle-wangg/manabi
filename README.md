@@ -1,6 +1,6 @@
 # Manabi
 
-Education scheduler for RUHacks 2022.
+Education scheduler for RU Hacks 2022.
 
 ## Inspiration
 
@@ -24,7 +24,7 @@ We're proud of creating a full-stack project that functions as we intended, and 
 
 ## What we learned
 
-We learned how to use React and Firebase to create a full stack application, and how to work as a team using Git and GitHub!
+We learned how to use React and Firebase to create a full-stack application, and how to work as a team using Git and GitHub!
 
 ## What's next for Manabi
 
