@@ -7,7 +7,7 @@ import Landing from './components/Landing';
 import "./App.css"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './components/Firebase';
-// import SignOutButton from './components/SignOutButton';
+import SignOutButton from './components/SignOutButton';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +46,13 @@ function App() {
                       </div>}
         />}
       </div>
+
       <SidePanel/>
+
+      <div>
+        <SignOutButton style={{ float: 'right' }} color='#C8D1DB' text="Sign Out"/>
+      </div>
+
   </div> : <Landing />
   )
 }

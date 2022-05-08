@@ -20,7 +20,7 @@ const Landing = () => {
             <div style={{
                 position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '120px'
                 }}>
-                <SignInButton color='#C8D1DB' text="Google Sign In"/>
+                <SignInButton color='#C8D1DB' text="Sign In"/>
             </div>
         </div>
     )
