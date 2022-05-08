@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Schedule.css';
 import Meeting from './Meeting';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -17,8 +17,15 @@ function Schedule() {
     return date.toDate().toString().substring(0, 15);
   }
 
+  let index = -1;
+
+  const incIndex = (idx) => {
+    index++;
+    return index;
+  }
+
   return (<div>
-    {meetings && meetings.map(meeting => <Meeting date={timeStampDate(meeting.date)} title={meeting.title} link={meeting.link} />)}
+    {meetings && meetings.map(meeting => <Meeting key={incIndex(index)} date={timeStampDate(meeting.date)} title={meeting.title} link={meeting.link} />)}
   </div>);
 }
 
