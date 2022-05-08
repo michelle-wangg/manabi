@@ -10,9 +10,24 @@ const Landing = () => {
             height: "100vh",
             minHeight: "100vh",
             }}>
-            <h1 className="Title">Welcome to Manabi!</h1>
-            <img alt="Logo" src={Logo} className="Logo"/>
-            <SignInButton color='#C8D1DB' text="Google Sign In"/>
+
+            <div style={{
+                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '-200px'
+                }}>
+                <h1 className="Title">Welcome to Manabi!</h1>
+            </div>
+
+            <div style={{
+                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '15px'
+                }}>
+                <img alt="Logo" src={Logo} className="Logo"/>
+            </div>
+
+            <div style={{
+                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '175px'
+                }}>
+                <SignInButton color='#C8D1DB' text="Google Sign In"/>
+            </div>
         </div>
     )
 }
