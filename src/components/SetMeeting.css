@@ -5,15 +5,15 @@
     background-color: #FFFFFF;
     border-radius: 5%;
     width: 500px;
-    height: 300px;
+    height: 280px;
 
 }
 
 .InnerBox {
     position: relative;
-    width: 50%;
-    min-height: 100px;
-    background-color: #27374F;
+    width: 70%;
+    min-height: 170px;
+    background-color: #EECB71;
     border: none;
     border-radius: 4px;
     margin: 20px auto;
@@ -22,7 +22,12 @@
 
 .ButtonAdd {
     position: absolute;
-    right: 50%;
+    right: 40%;
+    border: 1px solid #27374F;
+    border-radius: 10%;
+    background-color: #FFFFFF;
+    height: 50px;
+    width: 80px;
 }
 
 .ButtonClose {
@@ -34,4 +39,27 @@
     right: 2%;
     top: 3%;
     background-color: #EECB71;
+}
+
+.InnerText {
+    font-family: 'Inter', sans-serif;
+    color: #27374F;
+    padding-left: 60px;
+}
+
+.AddText {
+    font-family: 'Inter', sans-serif;
+    color: #27374F;
+    font-size: 15px;
+    
+}
+
+.Horizontal {
+    display:flex; 
+    flex-direction:row;
+}
+
+.InputBox {
+    width: 60px;
+    margin-left: 40px;
 }
