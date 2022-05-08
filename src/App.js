@@ -7,6 +7,7 @@ import Landing from './components/Landing';
 import "./App.css"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './components/Firebase';
+import AddMeeting from './components/AddMeeting';
 // import SignOutButton from './components/SignOutButton';
 
 function App() {

@@ -10,18 +10,13 @@ function Schedule() {
 
   const meetingsRef = collection(db, 'meetings');
   console.log(meetingsRef);
+  
   const [meetings] = useCollectionData(meetingsRef);
   console.log(meetings);
 
-  return (
-    <div>
-      <div className='Container'>
-        <h1 className='Month'>MAY</h1>
-        <ListOfMeetings />
-      </div>
-      {meetings && meetings.map(meeting => <h1>{meeting.title}</h1>)}
-    </div>
-  )
+  return (<div>
+    {meetings && meetings.map(meeting => <h1>{meeting.title}</h1>)}
+  </div>);
 }
 
 export default Schedule;
