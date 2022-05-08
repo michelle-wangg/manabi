@@ -12,19 +12,13 @@ const Landing = () => {
             }}>
 
             <div style={{
-                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '-200px'
-                }}>
-                <h1 className="Title">Welcome to Manabi!</h1>
-            </div>
-
-            <div style={{
-                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '15px'
+                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '-30px'
                 }}>
                 <img alt="Logo" src={Logo} className="Logo"/>
             </div>
 
             <div style={{
-                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '175px'
+                position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '120px'
                 }}>
                 <SignInButton color='#C8D1DB' text="Google Sign In"/>
             </div>
