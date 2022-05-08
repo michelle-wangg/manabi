@@ -1,6 +1,6 @@
 # Manabi
 
-Full Stack Education scheduler for RUHacks 2022.
+Education scheduler for RUHacks 2022.
 
 ## Inspiration
 
