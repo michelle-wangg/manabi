@@ -16,8 +16,9 @@ const SignInButton = ({ color, text }) => {
             })
     }
 
-    return <button style={{ fontSize: '18px', width: '150px', height: '75px', backgroundColor: color,
-                    border: 'none', marginLeft: '100px', marginTop: '10px' }} 
+    return <button style={{ fontSize: '18px', width: '190px', height: '75px', backgroundColor: color,
+                    border: 'none', marginLeft: '525px', marginTop: '20px' 
+                }} 
                     onClick={googleSignIn}>{ text }</button >
 }
 
