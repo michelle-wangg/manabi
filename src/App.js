@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Schedule from './components/Schedule';
 import SidePanel from './components/SidePanel'
 import SetMeeting from './components/SetMeeting'
-import ListOfMeetings from './components/ListOfMeetings';
 import Landing from './components/Landing';
 import "./App.css"
 import { useAuthState } from 'react-firebase-hooks/auth';
