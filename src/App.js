@@ -22,33 +22,33 @@ function App() {
   }, [user])
 
   return (
-    user ? 
-    <div className="rowC" style={{
-      backgroundColor: "#27374F",
-      height: "100%",
-      paddingBottom: "100px",
-    }}>
-      <div>
-
-        <div className='Header'>
-          <h1 className="Title">Manabi.</h1>
-          <button className='AddMeetingButton'
-                  onClick = {togglePopup}>
-                    <p style={{color: "#27374F",
-                              fontSize: 30}}>+</p>
-          </button>
+    user ?
+      <div className="rowC" style={{
+        backgroundColor: "#27374F",
+        height: "100%",
+        paddingBottom: "100px",
+      }}>
+        <div>
+          <div className='Header'>
+            <h1 className="Title">Manabi.</h1>
+            <button className='AddMeetingButton'
+              onClick={togglePopup}>
+              <p style={{
+                color: "#27374F",
+                fontSize: 30
+              }}>+</p>
+            </button>
+          </div>
+          <Schedule />
+          {isOpen && <SetMeeting handleClose={togglePopup}
+            content={
+              <div>
+                <p>this is sample stuff</p>
+              </div>}
+          />}
         </div>
-
-        <Schedule/>
-        {isOpen && <SetMeeting handleClose={togglePopup}
-                    content = {
-                      <div>
-                        <p>this is sample stuff</p>
-                      </div>}
-        />}
-      </div>
-      <SidePanel/>
-  </div> : <Landing />
+        <SidePanel />
+      </div> : <Landing />
   )
 }
 
