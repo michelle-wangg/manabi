@@ -48,6 +48,7 @@ function App() {
           />}
         </div>
         <SidePanel />
+        <AddMeeting />
       </div> : <Landing />
   )
 }

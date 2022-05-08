@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Schedule.css';
 import Meeting from './Meeting';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { db } from './Firebase.js';
-import { collection, Timestamp } from 'firebase/firestore';
+import { collection } from 'firebase/firestore';
 
 function Schedule() {
 
