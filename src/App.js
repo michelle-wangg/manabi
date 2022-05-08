@@ -51,7 +51,6 @@ function App() {
         </div>
 
         <SidePanel />
-        <AddMeeting />
 
         <div>
           <SignOutButton style={{ float: 'right' }} color='#C8D1DB' text="Sign Out" />

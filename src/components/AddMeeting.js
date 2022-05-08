@@ -1,6 +1,7 @@
 import React from 'react';
 import { db } from './Firebase.js';
 import { addDoc, collection, Timestamp } from 'firebase/firestore';
+import './SetMeeting.css';
 
 function AddMeeting({ date, title, link }) {
 
@@ -9,14 +10,14 @@ function AddMeeting({ date, title, link }) {
     const addDocument = async () => {
         
         await addDoc(meetingsRef, {
-            date: Timestamp.now(),
-            title: "Dijkstra's Algorithm",
-            link: "https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"
+            date: date,
+            title: title,
+            link: link
         });
 
     }
 
-    return <button onClick={addDocument}> Add Meeting </button>
+    return <button className="ButtonAdd" onClick={addDocument}> Add Meeting </button>
     
 }
 
