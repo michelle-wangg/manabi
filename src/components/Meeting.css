@@ -1,4 +1,4 @@
-.Date {
+.Text {
     color: #27374F;
     font-family: 'Inter', sans-serif;
     font-size: 25px;
@@ -6,14 +6,14 @@
 
 }
 
-.Time {
+.Link {
     color: #27374F;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     padding-left: 8px;
 }
 
-    
+
 .Topic {
     color: #27374F;
     font-family: 'Inter', sans-serif;
@@ -27,8 +27,8 @@
     background-color: #eecb71;
     padding-bottom: 20px;
     width: 500px;
-    display:flex; 
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     align-items: baseline;
     height: 50px;
 }
@@ -52,7 +52,7 @@
 }
 
 .Component {
-    display:flex; 
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     vertical-align: middle;
 }

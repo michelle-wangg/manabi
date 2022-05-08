@@ -26,12 +26,12 @@ function App() {
       <div className="rowC" style={{
         backgroundColor: "#27374F",
         height: "100%",
-        paddingBottom: "100px",
+        paddingBottom: "100px"
       }}>
         <div>
 
           <div className='Header'>
-            <h1 className="Title">Manabi.</h1>
+            <h1 className="Title">Manabi</h1>
             <button className='AddMeetingButton'
               onClick={togglePopup}>
               <p style={{
@@ -50,10 +50,10 @@ function App() {
           />}
         </div>
 
-        <SidePanel />
+        {/* <SidePanel /> */}
 
         <div>
-          <SignOutButton style={{ float: 'right' }} color='#C8D1DB' text="Sign Out" />
+          <SignOutButton style={{ margin: 'auto' }} color='#C8D1DB' text="Sign Out" />
         </div>
 
       </div> : <Landing />
