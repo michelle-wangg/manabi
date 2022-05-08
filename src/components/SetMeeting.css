@@ -1,0 +1,36 @@
+.Popup {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 300px;
+
+}
+
+.InnerBox {
+    position: relative;
+    width: 50%;
+    min-height: 100px;
+    background-color: #27374F;
+    border: none;
+    border-radius: 4px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.ButtonAdd {
+    position: absolute;
+    right: 50%;
+}
+
+.ButtonClose {
+    cursor:pointer;
+    /* border: 1px solid #999; */
+    border:none;
+    border-radius: 50%;
+    position:absolute;
+    right: -2%;
+    top: -2%;
+    background-color: #EECB71;
+}
