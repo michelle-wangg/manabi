@@ -2,6 +2,7 @@ import React from 'react';
 import Schedule from './components/Schedule';
 // import ListOfMeetings from './components/ListOfMeetings';
 import SidePanel from './components/SidePanel'
+import SetMeeting from './components/SetMeeting'
 import "./App.css"
 
 
@@ -18,6 +19,7 @@ function App() {
       <div>
       <h1 className="Title">Manabi.</h1>
       <Schedule/>
+      <SetMeeting></SetMeeting>
       </div>
       <SidePanel/>
 
