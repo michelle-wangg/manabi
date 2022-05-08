@@ -35,3 +35,9 @@
     top: 3%;
     background-color: #EECB71;
 }
+
+.Label {
+    color: #27374F;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}

@@ -16,24 +16,25 @@ const SetMeeting = props => {
 
     return (
         <div className='Popup'>
-            <div className='InnerBox'>
+            {/* <div className='InnerBox'>
 
+            </div> */}
+            <div style={{position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', marginTop: '-30px'}}>
+                <form>
+                    <label className="Label"> Meeting Date </label>
+                    <input type="date" onChange={(e) => setMeetingDate(e.target.value)} />
+                    <br />
+
+                    <label className="Label"> Title </label>
+                    <input type="text" placeholder="Enter Title of Meeting" onChange={(e) => setTitle(e.target.value)} />
+                    <br />
+
+                    <label className="Label"> Link </label>
+                    <input type="text" placeholder="Enter Link of Meeting" onChange={(e) => setLink(e.target.value)} />
+                </form>
+
+                <AddMeeting date={timeStampDate(meetingDate)} title={title} link={link} />
             </div>
-
-            <form>
-                <label>Meeting Date</label>
-                <input type="date" onChange={(e) => setMeetingDate(e.target.value)} />
-                <br />
-
-                <label>Title</label>
-                <input type="text" placeholder="Enter Title of Meeting" onChange={(e) => setTitle(e.target.value)} />
-                <br />
-
-                <label>Link</label>
-                <input type="text" placeholder="Enter Link of Meeting" onChange={(e) => setLink(e.target.value)} />
-            </form>
-
-            <AddMeeting date={timeStampDate(meetingDate)} title={title} link={link} />
 
             <button className='ButtonClose'
                 style={{ color: "white" }}

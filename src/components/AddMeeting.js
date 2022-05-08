@@ -17,7 +17,7 @@ function AddMeeting({ date, title, link }) {
 
     }
 
-    return <button className="ButtonAdd" onClick={addDocument}> Add Meeting </button>
+    return <button className="Label" onClick={addDocument}> Add Meeting </button>
     
 }
 
