@@ -1,21 +1,31 @@
 import React, { useState } from 'react'
 import './Meeting.css';
 
-function Meeting(props){
+function Meeting({ date, time, title, link }) {
   const [cls, setCls] = useState("NotJoined");
+  const [showLink, setShowLink] = useState(false);
+
+  const linkClick = () => {
+    setCls((cls) => (cls === "NotJoined" ? "Joined" : "NotJoined"));
+    setShowLink(!showLink);
+  }
 
   return (
     <div className='Component'>
       <div className='Box'>
-        <p className='Date'>{props.date}</p>
-        <p className='Time'>{props.time}</p>
-        <p className='Topic'>{props.topic}</p>
+        {showLink ?
+          <div>
+            <p className='Link'>{link}</p>
+          </div> :
+          <div className='Component'>
+            {/* <p className='Date'> {date} - {time} - {title}</p> */}
+            <p className='Date'> {date} </p>
+            <p className='Time'> {time} </p>
+            <p className='Topic'> {title}</p>
+          </div>}
       </div>
-
-      <button className={cls}
-              onClick={() => setCls((cls) => (cls === "NotJoined" ? "Joined" : "NotJoined"))}>
-        <p style={{color: "white",
-                  fontSize: 20}}>+</p>
+      <button className={cls} onClick={linkClick}>
+        <p style={{ color: "white", fontSize: 20 }}>+</p>
       </button>
     </div>
   )

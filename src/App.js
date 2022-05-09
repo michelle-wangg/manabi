@@ -4,10 +4,11 @@ import Schedule from './components/Schedule';
 import SidePanel from './components/SidePanel'
 import SetMeeting from './components/SetMeeting'
 import Landing from './components/Landing';
+import AddMeeting from './components/AddMeeting';
 import "./App.css"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './components/Firebase';
-// import SignOutButton from './components/SignOutButton';
+import SignOutButton from './components/SignOutButton';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,33 +22,41 @@ function App() {
   }, [user])
 
   return (
-    user ? 
-    <div className="rowC" style={{
-      backgroundColor: "#27374F",
-      height: "100%",
-      paddingBottom: "100px",
-    }}>
-      <div>
+    user ?
+      <div className="rowC" style={{
+        backgroundColor: "#27374F",
+        height: "100%",
+        paddingBottom: "100px"
+      }}>
+        <div>
 
-        <div className='Header'>
-          <h1 className="Title">Manabi.</h1>
-          <button className='AddMeetingButton'
-                  onClick = {togglePopup}>
-                    <p style={{color: "#27374F",
-                              fontSize: 30}}>+</p>
-          </button>
+          <div className='Header'>
+            <h1 className="Title">Manabi.</h1>
+            <button className='AddMeetingButton'
+              onClick={togglePopup}>
+              <p style={{
+                color: "#27374F",
+                fontSize: 30
+              }}>+</p>
+            </button>
+          </div>
+
+          <Schedule />
+          {isOpen && <SetMeeting handleClose={togglePopup}
+            content={
+              <div>
+                <p>this is sample stuff</p>
+              </div>}
+          />}
         </div>
 
-        <Schedule/>
-        {isOpen && <SetMeeting handleClose={togglePopup}
-                    content = {
-                      <div>
-                        <p>this is sample stuff</p>
-                      </div>}
-        />}
-      </div>
-      <SidePanel/>
-  </div> : <Landing />
+        {/* <SidePanel /> */}
+
+        <div>
+          <SignOutButton style={{ margin: 'auto' }} color='#C8D1DB' text="Sign Out" />
+        </div>
+
+      </div> : <Landing />
   )
 }
 

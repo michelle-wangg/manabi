@@ -41,25 +41,16 @@
     background-color: #EECB71;
 }
 
-.InnerText {
-    font-family: 'Inter', sans-serif;
+.Label {
     color: #27374F;
-    padding-left: 60px;
-}
-
-.AddText {
     font-family: 'Inter', sans-serif;
-    color: #27374F;
     font-size: 15px;
-    
+    padding-bottom: 10px;
 }
 
-.Horizontal {
-    display:flex; 
-    flex-direction:row;
-}
-
-.InputBox {
-    width: 60px;
-    margin-left: 40px;
+.ButtonAddMeeting {
+    color: #27374F;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
 }

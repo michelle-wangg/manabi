@@ -2,6 +2,9 @@
     font-weight: 60;
     font-family: 'Inter', sans-serif;
     font-size: 80px;
-    padding-left: 80px;
-    padding-top: 50px;
+}
+
+.Logo {
+    height: 200px;
+    width: 200px;
 }
