@@ -18,7 +18,6 @@ function Meeting({ date, time, title, link }) {
             <p className='Link'>{link}</p>
           </div> :
           <div className='Component'>
-            {/* <p className='Date'> {date} - {time} - {title}</p> */}
             <p className='Date'> {date} </p>
             <p className='Time'> {time} </p>
             <p className='Topic'> {title}</p>
