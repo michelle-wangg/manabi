@@ -28,7 +28,6 @@ function ListOfMeetings() {
         <Meeting date="13" time="03:00PM" topic="Recursion"/>
         <Meeting date="06" time="05:00PM" topic="Binary Tree"/>
         <Meeting date="06" time="05:00PM" topic="Binary Tree"/>
-        <Meeting date="06" time="05:00PM" topic="Binary Tree"/>
     </>
   )
 }
