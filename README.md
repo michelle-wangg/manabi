@@ -1,6 +1,6 @@
 # Manabi
 
-Education scheduler for RUHacks 2022.
+Education scheduler for RU Hacks 2022.
 
 ## Inspiration
 
@@ -12,7 +12,7 @@ Manabi allows students to sign in with their Google accounts, giving them access
 
 ## How we built it
 
-We used React, HTML, and CSS for the frontend components and UI, with Firebase for the authentication system and database.
+We used React, HTML, and CSS for the frontend components and UI, with Firebase for the authentication system and NoSQL database (Firestore).
 
 ## Challenges we ran into
 
@@ -20,11 +20,11 @@ Since the majority of the team was unfamiliar with the technologies that were us
 
 ## Accomplishments that we're proud of
 
-We're proud of creating a full stack project that functions as we intended, and uses technologies that we learned on the spot!
+We're proud of creating a full-stack project that functions as we intended, and uses technologies that we learned on the spot!
 
 ## What we learned
 
-We learned how to use React and Firebase to create a full stack application, and how to work as a team using Git and GitHub!
+We learned how to use React and Firebase to create a full-stack application, and how to work as a team using Git and GitHub!
 
 ## What's next for Manabi
 
